@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url('./to.jpg');
+        background-size: cover;
+    }
+    
+    #customers {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    #customers td,
+    #customers th {
+        border: 1px solid rgb(176, 248, 9);
+        padding: 8px;
+    }
+    
+    #customers tr:nth-child(even) {
+        background-color: #65f39b;
+    }
+    
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+    
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+    }
+    
+    tr {
+        text-align: center;
+        color: rgb(6, 2, 22);
+        font-family: cursive;
+    }
+</style>
+
+<body>
+    <table id="customers">
+
+        <tr>
+            <th>student</th>
+
+        </tr>
+
+
+
+        <% for (let i = 0; i < 12; i++) { %>
+            <tr>
+                <td>
+                    <%= img[i] %>
+                </td>
+            </tr>
+            <% }; %>
+
+
+
+
+    </table>
+
+
+    <script src="user.js "></script>
+</body>
+
+</html>
